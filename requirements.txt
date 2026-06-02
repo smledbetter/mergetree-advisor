@@ -1,0 +1,5 @@
+# Core — the Advisor needs only the official ClickHouse client (HTTP).
+clickhouse-connect>=0.7
+
+# Optional, for benchmarks/hits_models.py (the blind model-vs-Advisor head-to-head):
+#   anthropic>=0.40

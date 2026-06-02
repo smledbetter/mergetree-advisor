@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+# scratch run artifacts
+*.out
+*.err
+*.done
+*.log
+.DS_Store
