@@ -78,6 +78,8 @@ First, measurement over assertion. A model guesses. The Advisor measures. You do
 
 Second, workload-grounding for the non-obvious. Some access patterns cannot be read off the column names. Secondary filter dimensions. Multi-tenant tables. Drifting machine-generated workloads. There the query log is the only signal.
 
+The two benchmarks behind this are in [benchmarks/RESULTS.md](benchmarks/RESULTS.md). One shows where the Advisor loses. One shows where it wins by 41x.
+
 ## Scope and limits
 
 The Advisor recommends for plain `MergeTree`. It abstains on Replacing, Summing, Aggregating, and Collapsing engines for the structural checks. On those engines `ORDER BY` is the dedup key. Changing it changes results.
