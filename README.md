@@ -4,6 +4,8 @@ Your ClickHouse table is probably slower and larger than it needs to be. This fi
 
 Point it at a table that has a query history. It reads the workload from `system.query_log`. It reads the layout from `system.parts`. It builds a counterfactual rebuild. It measures the read-rows and compressed-bytes delta. Then it hands you copy-paste `ALTER` DDL. Every recommendation carries a number. Every recommendation preserves your query results byte-for-byte.
 
+<p align="center"><img src="assets/demo.png" alt="MergeTree Advisor demo: measured, ranked recommendations from a real workload" width="760"></p>
+
 ## What it is not
 
 It is not "ask an LLM to design your schema." I tested that. It does not hold up. See [Honest positioning](#honest-positioning).
